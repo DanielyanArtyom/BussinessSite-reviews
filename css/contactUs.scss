@@ -1,0 +1,207 @@
+@import "_fonts";
+@import "_header";
+@import "_footer";
+@import "_mixin";
+
+
+.container {
+    @include container;
+}
+
+.contactUs__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px 137px;
+    margin-top: 80px;
+    @media(max-width:850px) {
+        flex-direction: column;
+    }
+}
+
+.contactUs__form {
+    max-width: 530px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right:35px;
+    &--inputs {
+        display: flex;
+        justify-content: space-between;
+        .contactUs__input {
+            max-width: 249px;
+            width: 100%;
+            @media(max-width:450px) {
+                max-width: 349px;
+
+            }
+            
+        &+.contactUs__input {
+            margin-left: 15px;
+            @media(max-width:450px) {
+                margin-left: 0;
+            }
+        }
+        }
+        @media(max-width:450px) {
+            flex-direction: column;
+        }
+    }
+    textarea {
+        resize: none;
+    }
+}
+
+.contactUs__input {
+    border:none;
+    outline: none;
+    background: none;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $blueColor;
+    margin-bottom: 45px;
+    padding-bottom: 13px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.contactUs__btn {
+    background: $yellowColor;
+        padding: 14px 48px;
+        box-shadow: 0px 0px 6px #00000029;
+        border-radius: 26px;
+        width: 190px;
+        border:none;
+        color:#ffffff;
+        margin-bottom: 40px;
+        @media(max-width:550px) {
+            padding:8px 24px;
+            font-size: 12px;
+            margin:0 auto 40px;
+        }
+}
+
+
+.contactUs__content {
+    max-width: 782px;
+    width: 100%;
+}
+
+.contactUs__maintext {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 12px;
+    @media(max-width:550px) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+.contactUs__inqueries {
+    margin-bottom: 25px;
+}
+
+.inqueries__title,.businessHours__title {
+    font-family: $muliSemiBoldFont;
+    font-size: 18px;
+    line-height: 26px;
+    color:$blueColor;
+    margin-bottom: 23px;
+    @media(max-width:550px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+
+.inqueries__list-element{
+    margin-bottom: 20px;
+    padding-left:40px;
+    
+    &--location {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: 0;
+            height: 28px;
+            width: 23px;
+            background: url('../img/icons/map-pin.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            @media(max-width:550px) {
+                top: 3px;
+                left: 0;
+                height: 20px;
+                width: 17px;
+            }
+        }
+    }
+
+    &--phone {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: 0;
+            height: 28px;
+            width: 28px;
+            background: url('../img/icons/phone.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            @media(max-width:550px) {
+                top: 3px;
+                left: 0;
+                height: 17px;
+                width: 17px;
+            }
+        }
+    }
+
+    &--mail {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 0;
+            height: 22px;
+            width: 28px;
+            background: url('../img/icons/mail.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            @media(max-width:550px) {
+                top: 7px;
+                left: 0;
+                height: 16px;
+                width: 20px;
+            }
+        }
+    }
+
+    &--globe {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0;
+            height: 28px;
+            width: 28px;
+            background: url('../img/icons/globe\ \(1\).svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            @media(max-width:550px) {
+                top: 4px;
+                left: 0;
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }
+
+    @media(max-width:550px) {
+        padding-left:30px;
+    }
+
+}

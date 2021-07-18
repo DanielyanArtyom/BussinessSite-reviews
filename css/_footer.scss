@@ -1,0 +1,111 @@
+@import "_fonts";
+@import "_mixin";
+@import "_header";
+
+.container {
+    @include container;
+}
+
+.footer {
+    background: #0F6871;
+
+    &__inner {
+        padding: 50px 0 104px;
+
+        // display: flex;
+        // justify-content: space-between;
+        // flex-wrap: wrap;
+    }
+
+    &__icons {
+        margin-bottom: 40px;
+        border-top:1px solid $blueColor;
+        position: relative;
+        
+        .footer__list {
+            display: flex;
+            align-items: center;
+            max-width: 280px;
+            width: 100%;
+            margin:0 auto;
+            position: absolute;
+            background-color: #0F6871;
+            left:50%;
+            transform:translate(-50%, -50%)
+        }
+        
+        &-element-link {
+            color:#ffffff;
+            margin-bottom: 5px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+    }
+}
+
+.footer__list-element {
+    color:#ffffff;
+    text-align: center;
+    margin: 0 20px;
+    svg {
+        fill: #ffffff;
+        margin-top: 5px;
+        width: 30px;
+        height: 30px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            fill: $yellowColor;
+        }
+    }
+    &--facebook {
+        .b {
+            fill:#0F6871;
+        }
+    }
+}
+
+
+.footer__wrapper {
+    max-width: 1202px;
+    width: 100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 25px;
+    flex-wrap: wrap;
+
+
+    &-title {
+        color:#ffffff;
+        font: 600 18px/26px $muliFont;
+        margin-bottom: 25px;    
+    }
+
+    &-link {
+        color:#ffffff;
+        font: 400 16px/24px $muliFont;
+    }
+
+    &-list {
+        margin-bottom: 25px;
+        width: 200px;
+    }
+
+    @media(max-width:500px) {
+        justify-content: center;
+    }
+}
+
+.footer__navigation {
+    &-element {
+        margin-bottom: 20px;
+
+    }
+    &-link {
+        font: 400 18px/26px $muliFont;
+        color: #FCFCFC;
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/searchResult.css">
+    <title>result</title>
+    <script type='text/javascript'
+        src='https://platform-api.sharethis.com/js/sharethis.js#property=60423ae8406a11001102d48e&product=inline-share-buttons'
+        async='async'></script>
+</head>
+
+<body>
+
+    <div class="preHeader">
+        <div class="container">
+            <ul class="preHeader__list">
+                <li class="preHeader__list-element">Join us on</li>
+                <li class="preHeader__list-element preHeader__list-element--facebook">
+                    <a class="list-link " href="#">
+                        <svg class="preHeader__list-element-svg" xmlns="http://www.w3.org/2000/svg" width="30.955"
+                            height="30.955" viewBox="0 0 30.955 30.955">
+                            <g transform="translate(0)">
+                                <path class="a"
+                                    d="M29.246,0H1.707A1.708,1.708,0,0,0,0,1.709V29.248a1.708,1.708,0,0,0,1.709,1.707H29.246a1.708,1.708,0,0,0,1.709-1.708h0V1.707A1.708,1.708,0,0,0,29.246,0Zm0,0"
+                                    transform="translate(0 0)" />
+                                <path class="b"
+                                    d="M215.857,103.6V91.633h4.036l.6-4.686h-4.64V83.964c0-1.353.376-2.276,2.317-2.276h2.46V77.508a33.065,33.065,0,0,0-3.6-.184c-3.567,0-6.008,2.177-6.008,6.175v3.448H207v4.686h4.021V103.6Zm0,0"
+                                    transform="translate(-194.485 -72.649)" />
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li class="preHeader__list-element">
+                    <a class="list-link" href="#">
+                        <svg class="preHeader__list-element-svg" xmlns="http://www.w3.org/2000/svg" width="33.108"
+                            height="33.108" viewBox="0 0 33.108 33.108">
+                            <g transform="translate(0.001)">
+                                <path class="a"
+                                    d="M24.145,0H8.961A8.972,8.972,0,0,0,0,8.962V24.146a8.972,8.972,0,0,0,8.962,8.962H24.145a8.972,8.972,0,0,0,8.962-8.962V8.962A8.972,8.972,0,0,0,24.145,0ZM16.553,25.606a9.053,9.053,0,1,1,9.053-9.053A9.063,9.063,0,0,1,16.553,25.606Zm9.269-15.97A2.675,2.675,0,1,1,28.5,6.961,2.678,2.678,0,0,1,25.822,9.636Zm0,0" />
+                                <path class="a"
+                                    d="M153.132,146.02a7.112,7.112,0,1,0,7.112,7.112A7.12,7.12,0,0,0,153.132,146.02Zm0,0"
+                                    transform="translate(-136.579 -136.578)" />
+                                <path class="a"
+                                    d="M388.726,96.3a.734.734,0,1,0,.734.734A.735.735,0,0,0,388.726,96.3Zm0,0"
+                                    transform="translate(-362.904 -90.074)" />
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li class="preHeader__list-element">
+                    <a class="list-link" href="#">
+                        <svg class="preHeader__list-element-svg" xmlns="http://www.w3.org/2000/svg" width="34.502"
+                            height="32.777" viewBox="0 0 34.502 32.777">s
+                            <path class="a"
+                                d="M20.351,8A10.351,10.351,0,0,1,30.7,18.351V30.426H23.8V18.351a3.45,3.45,0,1,0-6.9,0V30.426H10V18.351A10.351,10.351,0,0,1,20.351,8Z"
+                                transform="translate(3.801 2.351)" />
+                            <rect class="a" width="6.9" height="20.701" transform="translate(0 12.076)" />
+                            <ellipse class="a" cx="3.45" cy="3.45" rx="3.45" ry="3.45" transform="translate(0 0)" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="preHeader__list-element">
+                    <a class="list-link" href="#">
+                        <svg class="preHeader__list-element-svg" xmlns="http://www.w3.org/2000/svg" width="37.952"
+                            height="30.955" viewBox="0 0 37.952 30.955">
+                            <defs>
+                            </defs>
+                            <path class="a"
+                                d="M38.952,3.007a18.8,18.8,0,0,1-5.417,2.639,7.728,7.728,0,0,0-13.559,5.175v1.725A18.39,18.39,0,0,1,4.45,4.733s-6.9,15.526,8.625,22.426A20.08,20.08,0,0,1,1,30.609c15.526,8.626,34.5,0,34.5-19.839a7.763,7.763,0,0,0-.138-1.432,13.318,13.318,0,0,0,3.588-6.331Z"
+                                transform="translate(-1 -2.99)" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="preHeader__list-element">
+                    <a href="#">
+                        <img class=" language__flag language__active" src="img/icons/usFlag.svg" alt="usFlag">
+                    </a>
+                </li>
+                <li class="preHeader__list-element">
+                    <a href="#">
+                        <img class="language__flag " src="img/icons/spainFlag.svg" alt="usFlag">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner header__inner-without">
+                <div class="logo">
+                    <a href="index.html">Logo<span>REVIEWS</span></a>
+                </div>
+                <div class="menu">
+                    <div class="icon" id="icons">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="header__list">
+                        <li class="header__list-element"><a href="index.html" class="header__list-link chosen">Home</a>
+                        </li>
+                        <li class="header__list-element"><a href="index.html#categories"
+                                class="header__list-link">Reviews
+                                Categories</a>
+                        </li>
+                        <li class="header__list-element"><a href="search.html" class="header__list-link">Search</a></li>
+                        <li class="header__list-element"><a href="aboutUs.html" class="header__list-link">About us</a>
+                        </li>
+                        <li class="header__list-element"><a href="contactUs.html" class="header__list-link">Contact</a>
+                        </li>
+                        <li class="header__list-element"><a href="business-edit.html"
+                                class="header__list-link header__list-link--listing">+ Add
+                                Listing</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="login.html" class="header__list-element--login ">
+                    <img src="img/icons/profile.svg" alt="profile">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="searchedPhoto">
+            <img src="img/searchResult.jpg" alt="hotels" />
+            <div class="container">
+                <div class="searchedPhoto__inner">
+                    <h2 class="searchedPhoto__title">Martina Golden Sand Bay</h2>
+                    <ul class="searchedPhoto__list">
+                        <li class="searchedPhoto__list-element searchedPhoto__list-element--home"> 71 Shirra Ave, Staten
+                            Island, NY 10314, USA</li>
+                        <div class="searchedPhoto__list-block">
+                            <li class="searchedPhoto__list-element searchedPhoto__list-element--phone">8722-8722</li>
+                            <li class="searchedPhoto__list-element searchedPhoto__list-element--site">
+                                <a class="searchedPhoto__list-link" href="#">https://google.com</a>
+                            </li>
+                        </div>
+                        <div class="searchedPhoto__list-block">
+                            <li class="searchedPhoto__list-element searchedPhoto__list-element--location">
+                                <a class="searchedPhoto__list-link" href="#">Look at the map</a>
+                            </li>
+
+                            <li class="searchedPhoto__list-element searchedPhoto__list-element--socials">
+                                <a class="searchedPhoto__list-link" href="#">
+                                    <svg class="searchedPhoto__list-element-svg" xmlns="http://www.w3.org/2000/svg"
+                                        width="30.955" height="30.955" viewBox="0 0 30.955 30.955">
+                                        <g transform="translate(0)">
+                                            <path class="fb-bg"
+                                                d="M29.246,0H1.707A1.708,1.708,0,0,0,0,1.709V29.248a1.708,1.708,0,0,0,1.709,1.707H29.246a1.708,1.708,0,0,0,1.709-1.708h0V1.707A1.708,1.708,0,0,0,29.246,0Zm0,0"
+                                                transform="translate(0 0)" />
+                                            <path class="fb-icon"
+                                                d="M215.857,103.6V91.633h4.036l.6-4.686h-4.64V83.964c0-1.353.376-2.276,2.317-2.276h2.46V77.508a33.065,33.065,0,0,0-3.6-.184c-3.567,0-6.008,2.177-6.008,6.175v3.448H207v4.686h4.021V103.6Zm0,0"
+                                                transform="translate(-194.485 -72.649)" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a class="searchedPhoto__list-link" href="#">
+                                    <svg class="searchedPhoto__list-element-svg" xmlns="http://www.w3.org/2000/svg"
+                                        width="33.108" height="33.108" viewBox="0 0 33.108 33.108">
+                                        <g transform="translate(0.001)">
+                                            <path
+                                                d="M24.145,0H8.961A8.972,8.972,0,0,0,0,8.962V24.146a8.972,8.972,0,0,0,8.962,8.962H24.145a8.972,8.972,0,0,0,8.962-8.962V8.962A8.972,8.972,0,0,0,24.145,0ZM16.553,25.606a9.053,9.053,0,1,1,9.053-9.053A9.063,9.063,0,0,1,16.553,25.606Zm9.269-15.97A2.675,2.675,0,1,1,28.5,6.961,2.678,2.678,0,0,1,25.822,9.636Zm0,0" />
+                                            <path
+                                                d="M153.132,146.02a7.112,7.112,0,1,0,7.112,7.112A7.12,7.12,0,0,0,153.132,146.02Zm0,0"
+                                                transform="translate(-136.579 -136.578)" />
+                                            <path
+                                                d="M388.726,96.3a.734.734,0,1,0,.734.734A.735.735,0,0,0,388.726,96.3Zm0,0"
+                                                transform="translate(-362.904 -90.074)" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a class="searchedPhoto__list-link" href="#">
+                                    <svg class="searchedPhoto__list-element-svg" xmlns="http://www.w3.org/2000/svg"
+                                        width="34.502" height="32.777" viewBox="0 0 34.502 32.777">s
+                                        <path class="a"
+                                            d="M20.351,8A10.351,10.351,0,0,1,30.7,18.351V30.426H23.8V18.351a3.45,3.45,0,1,0-6.9,0V30.426H10V18.351A10.351,10.351,0,0,1,20.351,8Z"
+                                            transform="translate(3.801 2.351)" />
+                                        <rect class="a" width="6.9" height="20.701" transform="translate(0 12.076)" />
+                                        <ellipse class="a" cx="3.45" cy="3.45" rx="3.45" ry="3.45"
+                                            transform="translate(0 0)" />
+                                    </svg>
+                                </a>
+
+                                <a class="searchedPhoto__list-link" href="#">
+                                    <svg class="searchedPhoto__list-element-svg" xmlns="http://www.w3.org/2000/svg"
+                                        width="37.952" height="30.955" viewBox="0 0 37.952 30.955">
+                                        <defs>
+                                        </defs>
+                                        <path class="a"
+                                            d="M38.952,3.007a18.8,18.8,0,0,1-5.417,2.639,7.728,7.728,0,0,0-13.559,5.175v1.725A18.39,18.39,0,0,1,4.45,4.733s-6.9,15.526,8.625,22.426A20.08,20.08,0,0,1,1,30.609c15.526,8.626,34.5,0,34.5-19.839a7.763,7.763,0,0,0-.138-1.432,13.318,13.318,0,0,0,3.588-6.331Z"
+                                            transform="translate(-1 -2.99)" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="reviewBar">
+            <div class="container">
+                <div class="reviewBar__inner">
+                    <div class="rating">
+                        <input type="radio" name="star" id="star_1">
+                        <label for="star_1"></label>
+                        <input type="radio" name="star" id="star_2">
+                        <label for="star_2"></label>
+                        <input type="radio" name="star" id="star_3">
+                        <label for="star_3"></label>
+                        <input type="radio" name="star" id="star_4">
+                        <label for="star_4"></label>
+                        <input type="radio" name="star" id="star_5">
+                        <label for="star_5"></label>
+                    </div>
+                    <p class="reviewBar__reviewsCount">2 reviews</p>
+                    <button type="submit" class="reviewBar__link">Write a review</button>
+                    <div class="reviewBar__follow">Follow</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="container">
+                <div class="info__inner">
+                    <div class="info__about">
+                        <div class="info__about-title">
+                            <h2>MARTINA GOLDEN SAND BAY</h2>
+                        </div>
+                        <div class="info__about-intro">
+                            <div class="info-title info-title--intro">
+                                <h6>Intro</h6>
+                            </div>
+                            <p class="intro-text">
+                                Pellentesque eget ullamcorper purus. Etiam at sapien sed nunc tempus tincidunt! Sed
+                                lacinia vehicula aliquet. Donec elementum tincidunt massa, sed pellentesque purus
+                                egestas non. Donec magna nunc, euismod at sollicitudin eget, interdum ac orci. Vivamus
+                                accumsan mattis lacus, at cursus velit suscipit vitae. Ut nulla nulla, sodales ac
+                                molestie vel, rhoncus eget tellus. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Nulla facilisi.
+                            </p>
+                        </div>
+                        <div class="info__about-highlights">
+                            <div class="info-title info-title--highlights">
+                                <h6>Highlights</h6>
+                            </div>
+                            <ul class="highlights__list">
+                                <li class="highlight__list-element">Parking</li>
+                                <li class="highlight__list-element">Take Reservations</li>
+                                <li class="highlight__list-element">Accept credit cards</li>
+                                <li class="highlight__list-element">Wheelchair accessible</li>
+                                <li class="highlight__list-element">Pet friendly</li>
+                                <li class="highlight__list-element">Free Wifi</li>
+                            </ul>
+                        </div>
+                        <div class="info__about-priceRange">
+                            <div class="info-title info-title--priceRange">
+                                <h6>Price range</h6>
+                            </div>
+                            <p class="priceRange-text">
+                                From $300 per night (approx.)
+                            </p>
+                        </div>
+                        <div class="info__about-video">
+                            <div class="info-title info-title--video">
+                                <h6>Video</h6>
+                            </div>
+                            <div class="video-container">
+                                <div class="video-content">
+                                    <a class="video__btn" data-fancybox
+                                        href="https://www.youtube.com/watch?v=9GgxinPwAGc">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info__suggests">
+                        <div class="info__socials">
+                            <div class="sharethis-inline-share-buttons"></div>
+                        </div>
+                        <div class="info__schedule">
+                            <h3 class="info__schedule-title">Currently open!</h3>
+                            <ul class="info__schedule-list">
+                                <li class="info__schedule-element">
+                                    <div class="schedule__day">
+                                        Mon:
+                                    </div>
+                                    <div class="schedule__time">
+                                        08:00 am-05:00 pm
+                                    </div>
+                                </li>
+                                <li class="info__schedule-element">
+                                    <div class="schedule__day">
+                                        Tue:
+                                    </div>
+                                    <div class="schedule__time">
+                                        08:00 am-05:00 pm
+                                    </div>
+                                </li>
+                                <li class="info__schedule-element">
+                                    <div class="schedule__day">
+                                        Wed:
+                                    </div>
+                                    <div class="schedule__time">
+                                        08:00 am-05:00 pm
+                                    </div>
+                                </li>
+                                <li class="info__schedule-element">
+                                    <div class="schedule__day">
+                                        Thu:
+                                    </div>
+                                    <div class="schedule__time">
+                                        08:00 am-05:00 pm
+                                    </div>
+                                </li>
+                                <li class="info__schedule-element">
+                                    <div class="schedule__day">
+                                        Fri:
+                                    </div>
+                                    <div class="schedule__time">
+                                        08:00 am-05:00 pm
+                                    </div>
+                                </li>
+                                <li class="info__schedule-element">
+                                    <div class="schedule__day">
+                                        Sat:
+                                    </div>
+                                    <div class="schedule__time">
+                                        08:00 am-05:00 pm
+                                    </div>
+                                </li>
+                                <li class="info__schedule-element">
+                                    <div class="schedule__day">
+                                        Sun:
+                                    </div>
+                                    <div class="schedule__time">
+                                        08:00 am-05:00 pm
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info__tags">
+                            <h3 class="info__tags-title">TAGS</h3>
+                            <ul class="info__tags-list">
+                                <li class="info__tags-element">Luxury</li>
+                                <li class="info__tags-element">Hotel</li>
+                            </ul>
+                        </div>
+                        <div class="info__similar">
+                            <h3 class="info__similar-title">SIMILAR</h3>
+                            <div class="similars__blocks">
+                                <div class="similar__block">
+                                    <div class="similar__block-img">
+                                        <img src="img/similra__1.jpg" alt="similar_1">
+                                    </div>
+                                    <div class="similar__block-info">
+                                        <h4 class="block-info__title">Sand Bay Hotel</h4>
+                                        <div class="star-rating">
+                                            <div class="back-stars">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+
+                                                <div class="front-stars" style="width: 60%">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="block-info__address">Glen Head</div>
+                                    </div>
+                                </div>
+                                <div class="similar__block">
+                                    <div class="similar__block-img">
+                                        <img src="img/similar__2.jpg" alt="similar_2">
+                                    </div>
+                                    <div class="similar__block-info">
+                                        <h4 class="block-info__title">Sand Bay Hotel</h4>
+                                        <div class="star-rating">
+                                            <div class="back-stars">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+
+                                                <div class="front-stars" style="width: 60%">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="block-info__address">Glen Head</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="resultReviews">
+            <div class="container">
+                <div class="resultReviews__inner">
+                    <h4 class="resultReviews__title">
+                        REVIEWS
+                    </h4>
+                    <div class="resultReviews__reviews-container">
+                        <div class="resultReviews__review">
+                            <div class="review__user-pic">
+                                <img src="img/user-2.png" alt="user">
+                            </div>
+                            <div class="review__content">
+                                <div class="review__date">
+                                    <div class="star-rating">
+                                        <div class="back-stars">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+
+                                            <div class="front-stars" style="width: 100%">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="review__day">January 02</p>
+                                    <p class="review__user-name">Permalink</p>
+                                </div>
+                                <p class="review__text">
+                                    Morbi commodo sagittis euismod. Donec non facilisis dolor, sed facilisis risus.
+                                    Praesent vitae posuere ante. Donec risus dui, feugiat pretium nunc ac, facilisis
+                                    placerat lectus.
+                                </p>
+                                <div class="review__login-btns">
+                                    <p class="review__login-text">
+                                        <a class="review__login-btn" href="login.html"> LOG IN</a> or <a
+                                            class="review__login-btn" href="Register.html">REGISTER</a> to post
+                                        comments
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resultReviews__review">
+                            <div class="review__user-pic">
+                                <img src="img/user-1.png" alt="user">
+                            </div>
+                            <div class="review__content">
+                                <div class="review__date">
+                                    <div class="star-rating">
+                                        <div class="back-stars">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+
+                                            <div class="front-stars" style="width: 100%">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="review__day">January 02</p>
+                                    <div class="review__user-name">Permalink</div>
+                                </div>
+                                <p class="review__text">
+                                    Morbi commodo sagittis euismod. Donec non facilisis dolor, sed facilisis risus.
+                                    Praesent vitae posuere ante. Donec risus dui, feugiat pretium nunc ac, facilisis
+                                    placerat lectus.
+                                </p>
+                                <div class="review__login-btns">
+                                    <p class="review__login-text">
+                                        <a class="review__login-btn" href="login.html"> LOG IN</a> or <a
+                                            class="review__login-btn" href="Register.html">REGISTER</a> to post
+                                        comments
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+
+
+                <div class="footer__icons">
+                    <ul class="footer__list">
+                        <li class="footer__list-element footer__list-element--facebook">
+                            <a class="list-link" href="#">
+                                <svg class="footer__list-element-svg" xmlns="http://www.w3.org/2000/svg" width="30.955"
+                                    height="30.955" viewBox="0 0 30.955 30.955">
+                                    <g transform="translate(0)">
+                                        <path class="a"
+                                            d="M29.246,0H1.707A1.708,1.708,0,0,0,0,1.709V29.248a1.708,1.708,0,0,0,1.709,1.707H29.246a1.708,1.708,0,0,0,1.709-1.708h0V1.707A1.708,1.708,0,0,0,29.246,0Zm0,0"
+                                            transform="translate(0 0)" />
+                                        <path class="b"
+                                            d="M215.857,103.6V91.633h4.036l.6-4.686h-4.64V83.964c0-1.353.376-2.276,2.317-2.276h2.46V77.508a33.065,33.065,0,0,0-3.6-.184c-3.567,0-6.008,2.177-6.008,6.175v3.448H207v4.686h4.021V103.6Zm0,0"
+                                            transform="translate(-194.485 -72.649)" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__list-element"><a class="list-link" href="#">
+                                <svg class="footer__list-element-svg" xmlns="http://www.w3.org/2000/svg" width="33.108"
+                                    height="33.108" viewBox="0 0 33.108 33.108">
+                                    <g transform="translate(0.001)">
+                                        <path class="a"
+                                            d="M24.145,0H8.961A8.972,8.972,0,0,0,0,8.962V24.146a8.972,8.972,0,0,0,8.962,8.962H24.145a8.972,8.972,0,0,0,8.962-8.962V8.962A8.972,8.972,0,0,0,24.145,0ZM16.553,25.606a9.053,9.053,0,1,1,9.053-9.053A9.063,9.063,0,0,1,16.553,25.606Zm9.269-15.97A2.675,2.675,0,1,1,28.5,6.961,2.678,2.678,0,0,1,25.822,9.636Zm0,0" />
+                                        <path class="a"
+                                            d="M153.132,146.02a7.112,7.112,0,1,0,7.112,7.112A7.12,7.12,0,0,0,153.132,146.02Zm0,0"
+                                            transform="translate(-136.579 -136.578)" />
+                                        <path class="a"
+                                            d="M388.726,96.3a.734.734,0,1,0,.734.734A.735.735,0,0,0,388.726,96.3Zm0,0"
+                                            transform="translate(-362.904 -90.074)" />
+                                    </g>
+                                </svg>
+                            </a></li>
+                        <li class="footer__list-element"><a class="list-link" href="#">
+                                <svg class="footer__list-element-svg" xmlns="http://www.w3.org/2000/svg" width="34.502"
+                                    height="32.777" viewBox="0 0 34.502 32.777">s
+                                    <path class="a"
+                                        d="M20.351,8A10.351,10.351,0,0,1,30.7,18.351V30.426H23.8V18.351a3.45,3.45,0,1,0-6.9,0V30.426H10V18.351A10.351,10.351,0,0,1,20.351,8Z"
+                                        transform="translate(3.801 2.351)" />
+                                    <rect class="a" width="6.9" height="20.701" transform="translate(0 12.076)" />
+                                    <ellipse class="a" cx="3.45" cy="3.45" rx="3.45" ry="3.45"
+                                        transform="translate(0 0)" />
+                                </svg>
+                            </a></li>
+                        <li class="footer__list-element"><a class="list-link" href="#">
+                                <svg class="footer__list-element-svg" xmlns="http://www.w3.org/2000/svg" width="37.952"
+                                    height="30.955" viewBox="0 0 37.952 30.955">
+                                    <path class="a"
+                                        d="M38.952,3.007a18.8,18.8,0,0,1-5.417,2.639,7.728,7.728,0,0,0-13.559,5.175v1.725A18.39,18.39,0,0,1,4.45,4.733s-6.9,15.526,8.625,22.426A20.08,20.08,0,0,1,1,30.609c15.526,8.626,34.5,0,34.5-19.839a7.763,7.763,0,0,0-.138-1.432,13.318,13.318,0,0,0,3.588-6.331Z"
+                                        transform="translate(-1 -2.99)" />
+                                </svg>
+                            </a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__wrapper">
+                    <div class="footer__wrapper-block">
+                        <h5 class="footer__wrapper-title">CATEGORIES</h5>
+                        <ul class="footer__wrapper-list">
+                            <li class="footer__wrapper-element">
+                                <a href="" class="footer__wrapper-link">Food</a>
+                            </li>
+                            <li class="footer__wrapper-element">
+                                <a href="" class="footer__wrapper-link">Hotels</a>
+                            </li>
+                            <li class="footer__wrapper-element">
+                                <a href="" class="footer__wrapper-link">Entertainment</a>
+                            </li>
+                            <li class="footer__wrapper-element">
+                                <a href="" class="footer__wrapper-link">Shopping</a>
+                            </li>
+                            <li class="footer__wrapper-element">
+                                <a href="" class="footer__wrapper-link">Automotive Maintenance</a>
+                            </li>
+                            <li class="footer__wrapper-element">
+                                <a href="" class="footer__wrapper-link">Beauty</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__wrapper-block">
+                        <h5 class="footer__wrapper-title">LOCATIONS</h5>
+                        <ul class="footer__wrapper-list">
+                            <li class="footer__wrapper-element">
+                                <a href="" class="footer__wrapper-link">New Jersey</a>
+                            </li>
+                            <li class="footer__wrapper-element">
+                                <a href="" class="footer__wrapper-link">New York</a>
+                            </li>
+                            <li class="footer__wrapper-element">
+                                <a href="" class="footer__wrapper-link">Cranford</a>
+                            </li>
+                            <li class="footer__wrapper-element">
+                                <a href="" class="footer__wrapper-link">Elizabeth</a>
+                            </li>
+                            <li class="footer__wrapper-element">
+                                <a href="" class="footer__wrapper-link">Teaneck</a>
+                            </li>
+                            <li class="footer__wrapper-element">
+                                <a href="" class="footer__wrapper-link">West New York</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="footer__navigation">
+                        <li class="footer__navigation-element">
+                            <a href="aboutUs.html" class="footer__navigation-link">About us</a>
+                        </li>
+                        <li class="footer__navigation-element">
+                            <a href="contactUs.html" class="footer__navigation-link">Contact Us</a>
+                        </li>
+                        <li class="footer__navigation-element">
+                            <a href="#" class="footer__navigation-link">Privacy Policy</a>
+                        </li>
+                        <li class="footer__navigation-element">
+                            <a href="#" class="footer__navigation-link">Terms & Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+
+    <script src="js/header.js"></script>
+    <script src="js/searchResult.js"></script>
+
+
+</body>
+
+</html>

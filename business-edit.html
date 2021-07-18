@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.11/cropper.min.css"
+        integrity="sha512-NCJ1O5tCMq4DK670CblvRiob3bb5PAxJ7MALAz2cV40T9RgNMrJSAwJKy0oz20Wu7TDn9Z2WnveirOeHmpaIlA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/tagify.css">
+    <link rel="stylesheet" href="css/business-edit.css">
+    <title>Business Edit</title>
+</head>
+
+<body>
+    <div class="preHeader">
+        <div class="container">
+            <ul class="preHeader__list">
+                <li class="preHeader__list-element">Join us on</li>
+                <li class="preHeader__list-element preHeader__list-element--facebook">
+                    <a class="list-link " href="#">
+                        <svg class="preHeader__list-element-svg" xmlns="http://www.w3.org/2000/svg" width="30.955"
+                            height="30.955" viewBox="0 0 30.955 30.955">
+                            <g transform="translate(0)">
+                                <path class="a"
+                                    d="M29.246,0H1.707A1.708,1.708,0,0,0,0,1.709V29.248a1.708,1.708,0,0,0,1.709,1.707H29.246a1.708,1.708,0,0,0,1.709-1.708h0V1.707A1.708,1.708,0,0,0,29.246,0Zm0,0"
+                                    transform="translate(0 0)" />
+                                <path class="b"
+                                    d="M215.857,103.6V91.633h4.036l.6-4.686h-4.64V83.964c0-1.353.376-2.276,2.317-2.276h2.46V77.508a33.065,33.065,0,0,0-3.6-.184c-3.567,0-6.008,2.177-6.008,6.175v3.448H207v4.686h4.021V103.6Zm0,0"
+                                    transform="translate(-194.485 -72.649)" />
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li class="preHeader__list-element">
+                    <a class="list-link" href="#">
+                        <svg class="preHeader__list-element-svg" xmlns="http://www.w3.org/2000/svg" width="33.108"
+                            height="33.108" viewBox="0 0 33.108 33.108">
+                            <g transform="translate(0.001)">
+                                <path class="a"
+                                    d="M24.145,0H8.961A8.972,8.972,0,0,0,0,8.962V24.146a8.972,8.972,0,0,0,8.962,8.962H24.145a8.972,8.972,0,0,0,8.962-8.962V8.962A8.972,8.972,0,0,0,24.145,0ZM16.553,25.606a9.053,9.053,0,1,1,9.053-9.053A9.063,9.063,0,0,1,16.553,25.606Zm9.269-15.97A2.675,2.675,0,1,1,28.5,6.961,2.678,2.678,0,0,1,25.822,9.636Zm0,0" />
+                                <path class="a"
+                                    d="M153.132,146.02a7.112,7.112,0,1,0,7.112,7.112A7.12,7.12,0,0,0,153.132,146.02Zm0,0"
+                                    transform="translate(-136.579 -136.578)" />
+                                <path class="a"
+                                    d="M388.726,96.3a.734.734,0,1,0,.734.734A.735.735,0,0,0,388.726,96.3Zm0,0"
+                                    transform="translate(-362.904 -90.074)" />
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li class="preHeader__list-element">
+                    <a class="list-link" href="#">
+                        <svg class="preHeader__list-element-svg" xmlns="http://www.w3.org/2000/svg" width="34.502"
+                            height="32.777" viewBox="0 0 34.502 32.777">s
+                            <path class="a"
+                                d="M20.351,8A10.351,10.351,0,0,1,30.7,18.351V30.426H23.8V18.351a3.45,3.45,0,1,0-6.9,0V30.426H10V18.351A10.351,10.351,0,0,1,20.351,8Z"
+                                transform="translate(3.801 2.351)" />
+                            <rect class="a" width="6.9" height="20.701" transform="translate(0 12.076)" />
+                            <ellipse class="a" cx="3.45" cy="3.45" rx="3.45" ry="3.45" transform="translate(0 0)" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="preHeader__list-element">
+                    <a class="list-link" href="#">
+                        <svg class="preHeader__list-element-svg" xmlns="http://www.w3.org/2000/svg" width="37.952"
+                            height="30.955" viewBox="0 0 37.952 30.955">
+                            <defs>
+                            </defs>
+                            <path class="a"
+                                d="M38.952,3.007a18.8,18.8,0,0,1-5.417,2.639,7.728,7.728,0,0,0-13.559,5.175v1.725A18.39,18.39,0,0,1,4.45,4.733s-6.9,15.526,8.625,22.426A20.08,20.08,0,0,1,1,30.609c15.526,8.626,34.5,0,34.5-19.839a7.763,7.763,0,0,0-.138-1.432,13.318,13.318,0,0,0,3.588-6.331Z"
+                                transform="translate(-1 -2.99)" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="preHeader__list-element">
+                    <a href="#">
+                        <img class=" language__flag language__active" src="img/icons/usFlag.svg" alt="usFlag">
+                    </a>
+                </li>
+                <li class="preHeader__list-element">
+                    <a href="#">
+                        <img class="language__flag " src="img/icons/spainFlag.svg" alt="usFlag">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <a href="index.html">Logo<span>REVIEWS</span></a>
+                </div>
+                <div class="menu">
+                    <div class="icon" id="icons">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="header__list">
+                        <li class="header__list-element"><a href="index.html" class="header__list-link ">Home</a>
+                        </li>
+                        <li class="header__list-element"><a href="index.html#categories"
+                                class="header__list-link">Reviews
+                                Categories</a>
+                        </li>
+                        <li class="header__list-element"><a href="search.html" class="header__list-link">Search</a></li>
+                        <li class="header__list-element"><a href="aboutUs.html" class="header__list-link">About us</a>
+                        </li>
+                        <li class="header__list-element"><a href="contactUs.html" class="header__list-link">Contact</a>
+                        </li>
+                        <li class="header__list-element"><a href="business-edit.html"
+                                class="header__list-link header__list-link--listing">+ Add
+                                Listing</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="login.html" class="header__list-element--login ">
+                    <img src="img/icons/profile.svg" alt="profile">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="business-edit">
+            <form class="business-form">
+                <div class="input__image">
+                    <img id="blah" src="img/uploadImg.svg" alt="upload">
+                </div>
+                <div class="form__content">
+                    <div class="openModal">Upload image</div>
+                    <h2 class="form__title">Add Business</h2>
+
+                    <div class="wrapper__input__block">
+                        <div class="input__block">
+                            <p class="input__name input__name--long">What is the name of what you want to add or review?
+                            </p>
+                            <input class="form__input" id="businessName" type="text" placeholder="Business Name" />
+                            <label for="businessName">Remaining characters: 256</label>
+                        </div>
+                        <div class="input__block">
+                            <p class="input__name">Category</p>
+                            <div class="form__select">
+                                <div class="options-container">
+                                    <div class="option">
+                                        <input type="radio" class="radio" id="hotels" name="category" />
+                                        <label for="hotels">Hotels</label>
+                                    </div>
+                                    <div class="option">
+                                        <input type="radio" class="radio" id="Pubs" name="category" />
+                                        <label for="Pubs">Pubs</label>
+                                    </div>
+                                </div>
+                                <div class="selected">
+                                    Select Category
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wrapper__input__block">
+                        <div class="input__block">
+                            <p class="input__name">Country</p>
+                            <div class="form__select">
+                                <div class="options-container">
+                                    <div class="option">
+                                        <input type="radio" class="radio" id="USA" name="country" />
+                                        <label for="USA">USA</label>
+                                    </div>
+                                    <div class="option">
+                                        <input type="radio" class="radio" id="Germany" name="country" />
+                                        <label for="Germany">Germany</label>
+                                    </div>
+                                </div>
+                                <div class="selected">
+                                    Select Country
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input__block">
+                            <p class="input__name">City</p>
+                            <div class="form__select">
+                                <div class="options-container">
+                                    <div class="option">
+                                        <input type="radio" class="radio" id="New-York" name="city" />
+                                        <label for="New-York">New-York</label>
+                                    </div>
+                                    <div class="option">
+                                        <input type="radio" class="radio" id="Moscow" name="city" />
+                                        <label for="Moscow">Moscow</label>
+                                    </div>
+                                </div>
+                                <div class="selected">
+                                    Select City
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wrapper__input__block">
+                        <div class="input__block">
+                            <p class="input__name">Address</p>
+                            <input class="form__input" type="text" placeholder="Address" />
+                        </div>
+
+                        <div class="input__block">
+                            <p class="input__name">Website</p>
+                            <input class="form__input" type="text" placeholder="Website" />
+                        </div>
+                    </div>
+
+                    <div class="wrapper__input__block">
+                        <div class="input__block">
+                            <p class="input__name">Email</p>
+                            <input class="form__input" type="email" placeholder="Email" />
+                        </div>
+
+                        <div class="input__block">
+                            <p class="input__name">Phone Number</p>
+                            <input class="form__input" type="tel" placeholder="Phone Number" />
+                        </div>
+                    </div>
+
+                    <div class="wrapper__input__block">
+                        <div class="input__block">
+                            <p class="input__name">Description</p>
+                            <textarea class="form__text-area"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="wrapper__input__block">
+                        <div class="input__block">
+                            <p class="input__name ">Highlights</p>
+                            <textarea class="form__input  form__input--tags" type="text"
+                                placeholder="Highlights"></textarea>
+                        </div>
+                        <div class="input__block">
+                            <p class="input__name">Add Your Highlights</p>
+                            <input class="form__input form__input--manual-tags" type="text" />
+                        </div>
+                    </div>
+
+                    <div class="wrapper__input__block">
+                        <div class="input__block">
+                            <p class="input__name ">Tags</p>
+                            <textarea class="form__input  form__input--tags" type="text" placeholder="Tags"></textarea>
+                        </div>
+                        <div class="input__block">
+                            <p class="input__name">Add Your Tags</p>
+                            <input class="form__input form__input--manual-tags" type="text" />
+                        </div>
+                    </div>
+
+                    <div class="wrapper__input__block">
+                        <div class="input__block">
+                            <p class="input__name">Add Price Description</p>
+                            <input class="form__input" type="text" placeholder="Add price" />
+                        </div>
+
+                        <div class="input__block input__block--women-only">
+                            <p class="input__name">Women Only</p>
+
+                            <label class="radio-check" for="womenOnly-Yes">
+                                <input type="radio" name="womenOnly" id="womenOnly-Yes" value="womenOnly-Yes">
+                                Yes
+                                <span></span>
+                            </label>
+
+                            <label class="radio-check" for="womenOnly-No">
+                                <input type="radio" name="womenOnly" id="womenOnly-No" value="womenOnly-No">
+                                No
+                                <span></span>
+                            </label>
+
+                            <label class="radio-check radio-check--third" for="womenOnly-notApplicable">
+                                <input type="radio" name="womenOnly" id="womenOnly-notApplicable"
+                                    value="womenOnly-notApplicable">
+                                Not applicable
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="wrapper__input__block">
+                        <div class="input__block input__block--businessHours">
+                            <p class="input__name">Do you want to add business hours?</p>
+                            <label class="radio-check" for="businessHours-Yes">
+                                <input type="radio" name="businessHours" id="businessHours-Yes"
+                                    value="businessHours-Yes">
+                                Yes
+                                <span></span>
+                            </label>
+                            <label class="radio-check" for="businessHours-No">
+                                <input type="radio" name="businessHours" id="businessHours-No" value="businessHours-No"
+                                    checked>
+                                No
+                                <span></span>
+                            </label>
+
+                            <div class="collage-cal__range-check">
+                                <label for="alwaysOpen" class="checkbox__container">
+                                    <input type="checkbox" id="alwaysOpen" class="checkmark-check" hidden
+                                        value="always-open" />
+                                    <span class="checkmark"></span>
+                                    Always open
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper__input__block">
+                        <ul class="businessHours-list">
+                            <li class=" businessHours-element ">
+                                <p class="business__day">Monday</p>
+                                <!-- <div class="form__select form__select--businessDay">
+                                   
+                                </div> -->
+                                <input type="time" class="business-element__time-input" value="00:00" />
+                                <p class="to">to</p>
+                                <input type="time" class="business-element__time-input" value="00:00" />
+                                <label for="monday-closed" class="checkbox__container ">
+                                    <input type="checkbox" id="monday-closed" class="checkmark-check" hidden
+                                        value="monday-close" />
+                                    <span class="checkmark"></span>
+                                    Closed
+                                </label>
+                            </li>
+                            <li class="businessHours-element">
+                                <p class="business__day">Tuesday</p>
+                                <input type="time" class="business-element__time-input" value="00:00" />
+
+                                <p class="to">to</p>
+                                <input type="time" class="business-element__time-input" value="00:00" />
+                                <label for="Tuesday-closed" class="checkbox__container ">
+                                    <input type="checkbox" id="Tuesday-closed" class="checkmark-check" hidden
+                                        value="Tuesday-close" />
+                                    <span class="checkmark"></span>
+                                    Closed
+                                </label>
+                            </li>
+                            <li class="businessHours-element">
+                                <p class="business__day business__day--wednesday">Wednesday</p>
+
+                                <input type="time" class="business-element__time-input" value="00:00" />
+
+
+                                <p class="to">to</p>
+                                <input type="time" class="business-element__time-input" value="00:00" />
+
+                                <label for="Wednesday-closed" class="checkbox__container ">
+                                    <input type="checkbox" id="Wednesday-closed" class="checkmark-check" hidden
+                                        value="Wednesday-close" />
+                                    <span class="checkmark"></span>
+                                    Closed
+                                </label>
+                            </li>
+                            <li class="businessHours-element">
+                                <p class="business__day">Thursday</p>
+                                <input type="time" class="business-element__time-input" value="00:00" />
+                                <p class="to">to</p>
+                                <input type="time" class="business-element__time-input" value="00:00" />
+                                <label for="Thursday-closed" class="checkbox__container ">
+                                    <input type="checkbox" id="Thursday-closed" class="checkmark-check" hidden
+                                        value="Thursday-close" />
+                                    <span class="checkmark"></span>
+                                    Closed
+                                </label>
+                            </li>
+                            <li class="businessHours-element">
+                                <p class="business__day business__day--friday">Friday</p>
+                                <input type="time" class="business-element__time-input" value="00:00" />
+
+                                <p class="to">to</p>
+                                <input type="time" class="business-element__time-input" value="00:00" />
+
+                                <label for="Friday-closed" class="checkbox__container ">
+                                    <input type="checkbox" id="Friday-closed" class="checkmark-check" hidden
+                                        value="Friday-close" />
+                                    <span class="checkmark"></span>
+                                    Closed
+                                </label>
+                            </li>
+                            <li class="businessHours-element">
+                                <p class="business__day">Saturday</p>
+                                <input type="time" class="business-element__time-input" value="00:00" />
+                                <p class="to">to</p>
+                                <input type="time" class="business-element__time-input" value="00:00" />
+                                <label for="Saturday-closed" class="checkbox__container ">
+                                    <input type="checkbox" id="Saturday-closed" class="checkmark-check" hidden
+                                        value="Saturday-close" />
+                                    <span class="checkmark"></span>
+                                    Closed
+                                </label>
+                            </li>
+                            <li class="businessHours-element">
+                                <p class="business__day business__day--sunday">Sunday</p>
+                                <input type="time" class="business-element__time-input" value="00:00" />
+
+
+                                <p class="to">to</p>
+                                <input type="time" class="business-element__time-input" value="00:00" />
+
+                                <label for="Sunday-closed" class="checkbox__container ">
+                                    <input type="checkbox" id="Sunday-closed" class="checkmark-check" hidden
+                                        value="Sunday-close" />
+                                    <span class="checkmark"></span>
+                                    Closed
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="wrapper__input__block">
+                        <div class="input__block">
+                            <p class="input__name">Do you want to add business hours?</p>
+                            <label class="radio-check" for="socials-Yes">
+                                <input type="radio" name="socials" id="socials-Yes" value="socials-Yes" checked>
+                                Yes
+                                <span></span>
+                            </label>
+                            <label class="radio-check" for="socials-No">
+                                <input type="radio" name="socials" id="socials-No" value="socials-No">
+                                No
+                                <span></span>
+                            </label>
+                            <ul class="socials-list">
+                                <li class="socials-element ">
+                                    <p class="socials__name">Facebook</p>
+                                    <div class="socials-element__input--wrapper">
+                                        <input type="text" class="socials-element__input" />
+                                    </div>
+
+                                </li>
+                                <li class="socials-element ">
+                                    <p class="socials__name">LinkedIn</p>
+                                    <div class="socials-element__input--wrapper">
+                                        <input type="text" class="socials-element__input" />
+                                    </div>
+
+                                </li>
+                                <li class="socials-element ">
+                                    <p class="socials__name">Instagram</p>
+                                    <div class="socials-element__input--wrapper">
+                                        <input type="text" class="socials-element__input" />
+                                    </div>
+
+                                </li>
+                                <li class="socials-element ">
+                                    <p class="socials__name">Twitter</p>
+                                    <div class="socials-element__input--wrapper">
+                                        <input type="text" class="socials-element__input" />
+                                    </div>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="wrapper__input__block">
+                        <div class="input__block  input__block--video">
+                            <p class="input__name">Do you want to add a video?</p>
+                            <label class="radio-check" for="video-Yes">
+                                <input type="radio" name="video" id="video-Yes" value="video-Yes" checked>
+                                Yes
+                                <span></span>
+                            </label>
+                            <label class="radio-check" for="video-No">
+                                <input type="radio" name="video" id="video-No" value="video-No">
+                                No
+                                <span></span>
+                            </label>
+
+                            <div class="videoUpload video-active">
+                                <label for="videoInput">
+                                    <img id="video" src="img/videoUpload.svg" alt="upload">
+                                    <input id="videoInput" type="file" style="display: none;" />
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button type="submit" class="business-form__btn">ADD IT</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Modal of uploading img -->
+    <div class="bg-modal">
+        <div class="modal">
+            <div class="modal__inner">
+                <div class="modal__close">+</div>
+                <!-- leftbox -->
+                <div class="box-2">
+                    <div class="result"></div>
+                </div>
+                <!-- input file -->
+                <div class="box">
+                    <!-- save btn -->
+                    <label for="imgInp" class="fileLabel">
+                        <input id="imgInp" class="userInputs" type="file" style="display: none;" />
+                        Input Image
+                    </label>
+                    <button class="btn save">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+
+                <div class="footer__icons">
+                    <ul class="footer__list">
+                        <li class="footer__list-element footer__list-element--facebook">
+                            <a class="list-link" href="#">
+                                <svg class="footer__list-element-svg" xmlns="http://www.w3.org/2000/svg" width="30.955"
+                                    height="30.955" viewBox="0 0 30.955 30.955">
+                                    <g transform="translate(0)">
+                                        <path class="a"
+                                            d="M29.246,0H1.707A1.708,1.708,0,0,0,0,1.709V29.248a1.708,1.708,0,0,0,1.709,1.707H29.246a1.708,1.708,0,0,0,1.709-1.708h0V1.707A1.708,1.708,0,0,0,29.246,0Zm0,0"
+                                            transform="translate(0 0)" />
+                                        <path class="b"
+                                            d="M215.857,103.6V91.633h4.036l.6-4.686h-4.64V83.964c0-1.353.376-2.276,2.317-2.276h2.46V77.508a33.065,33.065,0,0,0-3.6-.184c-3.567,0-6.008,2.177-6.008,6.175v3.448H207v4.686h4.021V103.6Zm0,0"
+                                            transform="translate(-194.485 -72.649)" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__list-element"><a class="list-link" href="#">
+                                <svg class="footer__list-element-svg" xmlns="http://www.w3.org/2000/svg" width="33.108"
+                                    height="33.108" viewBox="0 0 33.108 33.108">
+                                    <g transform="translate(0.001)">
+                                        <path class="a"
+                                            d="M24.145,0H8.961A8.972,8.972,0,0,0,0,8.962V24.146a8.972,8.972,0,0,0,8.962,8.962H24.145a8.972,8.972,0,0,0,8.962-8.962V8.962A8.972,8.972,0,0,0,24.145,0ZM16.553,25.606a9.053,9.053,0,1,1,9.053-9.053A9.063,9.063,0,0,1,16.553,25.606Zm9.269-15.97A2.675,2.675,0,1,1,28.5,6.961,2.678,2.678,0,0,1,25.822,9.636Zm0,0" />
+                                        <path class="a"
+                                            d="M153.132,146.02a7.112,7.112,0,1,0,7.112,7.112A7.12,7.12,0,0,0,153.132,146.02Zm0,0"
+                                            transform="translate(-136.579 -136.578)" />
+                                        <path class="a"
+                                            d="M388.726,96.3a.734.734,0,1,0,.734.734A.735.735,0,0,0,388.726,96.3Zm0,0"
+                                            transform="translate(-362.904 -90.074)" />
+                                    </g>
+                                </svg>
+                            </a></li>
+                        <li class="footer__list-element"><a class="list-link" href="#">
+                                <svg class="footer__list-element-svg" xmlns="http://www.w3.org/2000/svg" width="34.502"
+                                    height="32.777" viewBox="0 0 34.502 32.777">s
+                                    <path class="a"
+                                        d="M20.351,8A10.351,10.351,0,0,1,30.7,18.351V30.426H23.8V18.351a3.45,3.45,0,1,0-6.9,0V30.426H10V18.351A10.351,10.351,0,0,1,20.351,8Z"
+                                        transform="translate(3.801 2.351)" />
+                                    <rect class="a" width="6.9" height="20.701" transform="translate(0 12.076)" />
+                                    <ellipse class="a" cx="3.45" cy="3.45" rx="3.45" ry="3.45"
+                                        transform="translate(0 0)" />
+                                </svg>
+                            </a></li>
+                        <li class="footer__list-element"><a class="list-link" href="#">
+                                <svg class="footer__list-element-svg" xmlns="http://www.w3.org/2000/svg" width="37.952"
+                                    height="30.955" viewBox="0 0 37.952 30.955">
+                                    <path class="a"
+                                        d="M38.952,3.007a18.8,18.8,0,0,1-5.417,2.639,7.728,7.728,0,0,0-13.559,5.175v1.725A18.39,18.39,0,0,1,4.45,4.733s-6.9,15.526,8.625,22.426A20.08,20.08,0,0,1,1,30.609c15.526,8.626,34.5,0,34.5-19.839a7.763,7.763,0,0,0-.138-1.432,13.318,13.318,0,0,0,3.588-6.331Z"
+                                        transform="translate(-1 -2.99)" />
+                                </svg>
+                            </a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__wrapper">
+                    <div class="footer__wrapper-block">
+                        <h5 class="footer__wrapper-title">CATEGORIES</h5>
+                        <ul class="footer__wrapper-list">
+                            <li class="footer__wrapper-element">
+                                <a href="" class="footer__wrapper-link">Food</a>
+                            </li>
+                            <li class="footer__wrapper-element">
+                                <a href="" class="footer__wrapper-link">Hotels</a>
+                            </li>
+                            <li class="footer__wrapper-element">
+                                <a href="" class="footer__wrapper-link">Entertainment</a>
+                            </li>
+                            <li class="footer__wrapper-element">
+                                <a href="" class="footer__wrapper-link">Shopping</a>
+                            </li>
+                            <li class="footer__wrapper-element">
+                                <a href="" class="footer__wrapper-link">Automotive Maintenance</a>
+                            </li>
+                            <li class="footer__wrapper-element">
+                                <a href="" class="footer__wrapper-link">Beauty</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__wrapper-block">
+                        <h5 class="footer__wrapper-title">LOCATIONS</h5>
+                        <ul class="footer__wrapper-list">
+                            <li class="footer__wrapper-element">
+                                <a href="" class="footer__wrapper-link">New Jersey</a>
+                            </li>
+                            <li class="footer__wrapper-element">
+                                <a href="" class="footer__wrapper-link">New York</a>
+                            </li>
+                            <li class="footer__wrapper-element">
+                                <a href="" class="footer__wrapper-link">Cranford</a>
+                            </li>
+                            <li class="footer__wrapper-element">
+                                <a href="" class="footer__wrapper-link">Elizabeth</a>
+                            </li>
+                            <li class="footer__wrapper-element">
+                                <a href="" class="footer__wrapper-link">Teaneck</a>
+                            </li>
+                            <li class="footer__wrapper-element">
+                                <a href="" class="footer__wrapper-link">West New York</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="footer__navigation">
+                        <li class="footer__navigation-element">
+                            <a href="aboutUs.html" class="footer__navigation-link">About us</a>
+                        </li>
+                        <li class="footer__navigation-element">
+                            <a href="contactUs.html" class="footer__navigation-link">Contact Us</a>
+                        </li>
+                        <li class="footer__navigation-element">
+                            <a href="#" class="footer__navigation-link">Privacy Policy</a>
+                        </li>
+                        <li class="footer__navigation-element">
+                            <a href="#" class="footer__navigation-link">Terms & Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.11/cropper.min.js"
+        integrity="sha512-FHa4dxvEkSR0LOFH/iFH0iSqlYHf/iTwLc5Ws/1Su1W90X0qnxFxciJimoue/zyOA/+Qz/XQmmKqjbubAAzpkA=="
+        crossorigin="anonymous"></script>
+    <script src="js/header.js"></script>
+    <script src="js/business-edit.js"></script>
+    <script src="js/tagify.min.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
